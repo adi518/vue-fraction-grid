@@ -13,12 +13,15 @@ export default {
   props: {
     width: String
   },
+  props: {
+    gutter: String
+  },
   computed: {
     styleObject () {
       return {
         maxWidth: this.width || this.config.container,
-        paddingRight: this.config.gutter,
-        paddingLeft: this.config.gutter
+        paddingRight: this.gutter || this.config.gutter,
+        paddingLeft: this.gutter || this.config.gutter
       }
     }
   }

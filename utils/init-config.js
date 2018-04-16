@@ -1,5 +1,6 @@
 export default {
   created () {
-    this.config = this.$options.config
+    const { config = {} } = this.$options
+    this.config = config
   }
 }
