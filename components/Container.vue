@@ -11,9 +11,7 @@ export default {
   name: 'container',
   mixins: [initConfig],
   props: {
-    width: String
-  },
-  props: {
+    width: String,    
     gutter: String
   },
   computed: {
